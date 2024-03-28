@@ -2,7 +2,7 @@
 const nextConfig = {
     reactStrictMode:false,
     images:{
-        domains:['ap-south-1.graphassets.com']
+        domains:['ap-south-1.graphassets.com','lh3.googleusercontent.com']
     }
 };
 
