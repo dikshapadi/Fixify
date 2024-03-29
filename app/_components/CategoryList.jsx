@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 function CategoryList({ categoryList }) {
   //console.log(categoryList);
@@ -8,7 +9,8 @@ function CategoryList({ categoryList }) {
     <div className="mx-4 md:mx-22 lg:mx-52 grid grid-cols-3 md:grid-cols-6 lg:grid-cols-6 gap-4">
       {categoryList.length > 0
         ? categoryList.map((category, index) => (
-            <div
+            <Link
+              href={"/search/" + category.name}
               key={index}
               className="flex flex-col items-center bg-purple-100 p-3 rounded-lg cursor-pointer hover:scale-110 transition-all ease-in-out"
             >
@@ -19,7 +21,7 @@ function CategoryList({ categoryList }) {
                 height={50}
               />
               <h2>{category.name}</h2>
-            </div>
+            </Link>
           ))
         : // skeleton effect
           [1, 2, 3, 4, 5, 6].map((item, index) => (
