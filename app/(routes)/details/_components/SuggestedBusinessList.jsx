@@ -4,6 +4,7 @@ import { NotebookPen } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
+import BookingSection from "./BookingSection";
 
 function SuggestedBusinessList({ businessDeet }) {
   const [businessList, setBusinessList] = useState([]);
@@ -18,9 +19,11 @@ function SuggestedBusinessList({ businessDeet }) {
   };
   return (
     <div className="md:pl-7">
-      <Button className="flex gap-2 w-full">
-        <NotebookPen /> Book Appointment
-      </Button>
+      <BookingSection businessDeet={businessDeet}>
+        <Button className="flex gap-2 w-full">
+          <NotebookPen /> Book Appointment
+        </Button>
+      </BookingSection>
       <div className="hidden md:block">
         <h2 className="font-bold text-lg mb-3 mt-3">Similar business</h2>
         <div>

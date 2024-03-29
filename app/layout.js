@@ -2,6 +2,7 @@ import { Outfit } from "next/font/google";
 import "./globals.css";
 import Header from "./_components/Header";
 import NextAuthSessionProvider from "./provider";
+import { Toaster } from "@/components/ui/sonner";
 
 const inter = Outfit({ subsets: ["latin"] });
 export const metadata = {
@@ -16,6 +17,7 @@ export default function RootLayout({ children }) {
         <NextAuthSessionProvider>
           <div>
             <Header />
+            <Toaster/>
             {children}
           </div>
         </NextAuthSessionProvider>
