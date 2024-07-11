@@ -1,3 +1,14 @@
+# Fixify
+Fixify is a website facilitating seamless booking of slots for various services including painting, home cleaning, repairs, and electrical work. Leveraged GraphQL capabilities from Hygraph CMS to efficiently manage and query data, ensuring smooth communication between the front-end and back-end systems.
+
+## Results 
+<img width="953" alt="image" src="https://github.com/dikshapadi/Fixify/assets/95542633/7ab669c5-f478-4021-a8ab-3291b0d9b9ff">
+
+
+
+
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
